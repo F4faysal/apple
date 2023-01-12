@@ -1,0 +1,33 @@
+/* <!--Using media queries to select right sized background image to download--> */
+
+.sectionStyle {
+  background-image: url("../../asset/hero_iphone14pro__e5xbgo5ffhg2_large.jpg");
+}
+
+@media screen and (max-width: 640px) {
+  .sectionStyle {
+    background: url("../../asset/hero_iphone14pro__e5xbgo5ffhg2_small_2x.jpg")
+      no-repeat center center fixed;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .sectionStyle {
+    background-image: url("../../asset/hero_iphone14pro__e5xbgo5ffhg2_large.jpg");
+  }
+}
+@media screen and (min-width: 1024px) {
+  .sectionStyle {
+    background-image: url("../../asset/hero_iphone14pro__e5xbgo5ffhg2_large.jpg");
+  }
+}
+
+.h {
+  place-items: center;
+  background-size: cover;
+  background-position: center;
+  justify-items: center;
+  justify-content: center;
+  align-content: stretch;
+  align-items: start;
+}

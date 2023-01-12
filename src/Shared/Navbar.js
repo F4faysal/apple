@@ -39,7 +39,7 @@ const menuItems = (
 
 const Navbar = () => {
   return (
-    <nav className="bg-black px-72 ">
+    <nav className="bg-black md:px-72 ">
       <div className="navbar container mx-auto text-white">
         <div className="navbar-start">
           <div className="dropdown">
@@ -61,7 +61,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              className="text-black menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               {menuItems}
             </ul>
