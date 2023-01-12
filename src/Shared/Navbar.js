@@ -3,15 +3,7 @@ import { Link } from "react-router-dom";
 
 const menuItems = (
   <>
-    <li>
-      <a className="btn btn-ghost normal-case text-xl">
-        <img
-          src="https://www.apple.com/ac/globalnav/7/en_US/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__b5er5ngrzxqq_large.svg"
-          alt=""
-        />
-      </a>{" "}
-    </li>
-
+    {" "}
     <li>
       <Link to={""}>Store</Link>
     </li>
@@ -41,22 +33,6 @@ const menuItems = (
     </li>
     <li>
       <Link to={""}>Support</Link>
-    </li>
-    <li>
-      <a className="btn btn-ghost normal-case text-xl">
-        <img
-          src="https://www.apple.com/ac/globalnav/7/en_US/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_search_image__cbllq1gkias2_large.svg"
-          alt=""
-        />
-      </a>
-    </li>
-    <li>
-      <a className="btn btn-ghost normal-case text-xl">
-        <img
-          src="https://www.apple.com/ac/globalnav/7/en_US/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_bag_image__yzte50i47ciu_large.svg"
-          alt=""
-        />
-      </a>
     </li>
   </>
 );
@@ -90,11 +66,30 @@ const Navbar = () => {
               {menuItems}
             </ul>
           </div>
+          <a className="btn btn-ghost normal-case text-xl">
+            <img
+              src="https://www.apple.com/ac/globalnav/7/en_US/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__b5er5ngrzxqq_large.svg"
+              alt=""
+            />
+          </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{menuItems}</ul>
         </div>
-        <div className="navbar-end"></div>
+        <div className="navbar-end">
+          <a className="btn btn-ghost normal-case text-xl">
+            <img
+              src="https://www.apple.com/ac/globalnav/7/en_US/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_search_image__cbllq1gkias2_large.svg"
+              alt=""
+            />
+          </a>
+          <a className="btn btn-ghost normal-case text-xl">
+            <img
+              src="https://www.apple.com/ac/globalnav/7/en_US/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_bag_image__yzte50i47ciu_large.svg"
+              alt=""
+            />
+          </a>
+        </div>
       </div>
     </nav>
   );
