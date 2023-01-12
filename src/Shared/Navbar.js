@@ -39,7 +39,7 @@ const menuItems = (
 
 const Navbar = () => {
   return (
-    <nav className="bg-black">
+    <nav className="bg-black px-72 ">
       <div className="navbar container mx-auto text-white">
         <div className="navbar-start">
           <div className="dropdown">
@@ -66,29 +66,34 @@ const Navbar = () => {
               {menuItems}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">
+          <Link className="btn btn-ghost normal-case text-xl">
+            
+          </Link>
+          <Link className="btn btn-ghost normal-case text-xl">
             <img
               src="https://www.apple.com/ac/globalnav/7/en_US/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__b5er5ngrzxqq_large.svg"
               alt=""
             />
-          </a>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{menuItems}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn btn-ghost normal-case text-xl">
-            <img
-              src="https://www.apple.com/ac/globalnav/7/en_US/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_search_image__cbllq1gkias2_large.svg"
-              alt=""
-            />
-          </a>
-          <a className="btn btn-ghost normal-case text-xl">
-            <img
-              src="https://www.apple.com/ac/globalnav/7/en_US/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_bag_image__yzte50i47ciu_large.svg"
-              alt=""
-            />
-          </a>
+          <>
+            <Link className="btn btn-ghost normal-case text-xl">
+              <img
+                src="https://www.apple.com/ac/globalnav/7/en_US/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_search_image__cbllq1gkias2_large.svg"
+                alt=""
+              />
+            </Link>
+            <Link className="btn btn-ghost normal-case text-xl">
+              <img
+                src="https://www.apple.com/ac/globalnav/7/en_US/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_bag_image__yzte50i47ciu_large.svg"
+                alt=""
+              />
+            </Link>
+          </>
         </div>
       </div>
     </nav>
